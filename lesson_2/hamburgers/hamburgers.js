@@ -36,7 +36,6 @@ class Hamburger {
     getSize(size) {
         let result = this.sizeList.find(el => el.name === size);
         return result;
-
     }
 
     getStuffing(stuffing) {
@@ -65,8 +64,6 @@ class Hamburger {
         totalPrice = this.size.price + this.stuffing.price;
         this.toppings.forEach(el => totalPrice += el.price);
         return totalPrice;
-
-
     }
 
     calculateCalories() {
