@@ -108,7 +108,7 @@
 
     fetch('texttoreplace.txt')
         .then(response => response.text())
-        .then(text => text.replace(/'/gm, '"'))
+        .then(text => text.replace(/((?<=\s)'|'((?=(\s|$))))/gm, '"'))
         .then(result => console.log(result));
 
 </script>
