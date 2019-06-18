@@ -1,7 +1,7 @@
-Vue.component('search', {
-    props: ['search', 'userSearch'],
-    template: `<form action="#" method="post" class="search" @submit.prevent="filter">
-                    <input type="text" class="search-field" v-model="userSearch">
+Vue.component('search-form', {
+    props: ['search-form', 'userSearch'],
+    template: `<form action="#" method="post" class="search-form" @submit.prevent="$parent.$emit(filter)">
+                    <input type="text" class="search-field" :value="userSearch">
                     <button class="btn-search" type="submit">
                     <i class="fas fa-search"></i>
                     </button>
