@@ -11,7 +11,7 @@
     <header>
         <div class="logo">E-shop</div>
         <div class="cart">
-            <search-form :class="search-form" v-model="userSearch"></search-form>
+            <search-form v-model="userSearch" @filter="filter"></search-form>
             <!--<form action="#" method="post" class="search-form" @submit.prevent="filter">
                 <input type="text" class="search-field" v-model="userSearch">
                 <button class="btn-search" type="submit">
