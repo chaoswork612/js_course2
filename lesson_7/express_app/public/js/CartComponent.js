@@ -61,7 +61,7 @@ Vue.component('cart', {
                         }
                     })
             }
-            
+
             /*this.$parent.getJson(`${API}/deleteFromBasket.json`)
                 .then(data => {
                     if(data.result){
